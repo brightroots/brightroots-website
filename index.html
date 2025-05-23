@@ -171,7 +171,29 @@ nav a:hover {
     .thumbnail img:hover, .thumbnail.active img {
       border-color: #0078b4;
     }
-  </style>
+    .fade-in {
+    opacity: 0;
+    animation: fadeInSmooth 1s ease forwards;
+  }
+
+  @keyframes fadeInSmooth {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .highlight {
+    background-color: #eaf8ff;
+    padding: 1.2rem;
+    border-left: 5px solid #66c5e5;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .slide img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+  }
+</style>
 </head>
 <body>
   <header style="text-align: left; padding: 4rem 2rem; background-color: #66c5e5; background-image: url('img_header.jpg'); background-size: cover; background-position: center;">
@@ -354,23 +376,23 @@ nav a:hover {
     </script>
   </section>
 
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>About Us</h2>
     <p>BrightRoots Learning brings structured and joyful learning experiences to your home. Inspired by the Kumon approach, we focus on practice, discipline, and love of learning. Each class is designed by experienced educators who understand what kids enjoy — and how they thrive.</p>
   </section>
 
-  <section class="worksheet-download">
+  <section class="worksheet-download fade-in highlight">
     <h2>Free Sample Worksheets</h2>
     <p>Download a sample worksheet to experience our approach to learning.</p>
     <a href="worksheet-sample.pdf" download>Download Worksheet</a>
   </section>
 
-  <section class="parent-portal">
+  <section class="parent-portal fade-in highlight">
     <h2>Parent Portal</h2>
     <p>Parents can track class schedules, attendance, and student progress. (Coming soon!)</p>
   </section>
 
-  <section id="join">
+  <section id="join" class="fade-in">
     <h2>Join a Free Trial Class</h2>
     <p>Email us at <a href="mailto:momentsnmelts@gmail.com">momentsnmelts@gmail.com</a> or reach out on <a href="https://www.facebook.com/BrightRootsLearning">Facebook</a>.</p>
     <a class="button" href="https://wa.me/916386537989">Message us on WhatsApp</a>
@@ -383,5 +405,11 @@ nav a:hover {
   <footer>
     <p>&copy; 2025 BrightRoots Learning. All rights reserved.</p>
   </footer>
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <a href="https://wa.me/916386537989" target="_blank" style="background-color: #25D366; color: white; padding: 12px 16px; border-radius: 50%; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.2); text-decoration: none; font-size: 24px;">
+    💬
+  </a>
+</div>
+
 </body>
 </html>
