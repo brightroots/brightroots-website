@@ -24,14 +24,15 @@
   line-height: 1.6;
 }
     header {
-  background-color: #66c5e5;
   background-image: url("img_header.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   color: #fff;
-  padding: 3rem 1rem 2rem;
-  text-align: center;
+  height: 90vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
     nav {
       background: #ffffff;
@@ -277,14 +278,14 @@ nav a:hover {
   </div>
 </header>
 
-<nav class="sticky-nav">
-  <div style="text-align: center; padding: 1rem; background-color: #ffffff; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-    <a href="#classes" title="Classes"><img src="icon-classes.png" alt="Classes" style="width: 48px;"></a>
-    <a href="#schedule" title="Schedule & Pricing"><img src="icon-schedule.png" alt="Schedule" style="width: 48px;"></a>
-    <a href="#testimonials" title="Testimonials"><img src="icon-testimonials.png" alt="Testimonials" style="width: 48px;"></a>
-    <a href="#gallery" title="Gallery"><img src="icon-gallery.png" alt="Gallery" style="width: 48px;"></a>
-    <a href="#about" title="About"><img src="icon-about.png" alt="About" style="width: 48px;"></a>
-    <a href="#join" title="Join Us"><img src="icon-join.png" alt="Join Us" style="width: 48px;"></a>
+<nav class="sticky-nav" style="position: absolute; top: 0; left: 0; width: 100%; background: transparent; box-shadow: none;">
+  <div style="text-align: center; padding: 1rem;">
+    <a href="#classes">Classes</a>
+    <a href="#schedule">Schedule & Pricing</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#join">Join Us</a>
   </div>
 </nav></section>
   
