@@ -271,19 +271,20 @@ nav a:hover {
 </style>
 </head>
 <body>
-  <header class="hero-banner" style="background: none; height: auto;">
-  <img src="hero-illustration.png" alt="BrightRoots Kids Hero Image" style="width: 100%; height: auto; display: block;">
+  <header class="hero-banner">
+  <div class="hero-overlay">
+    
+  </div>
 </header>
 
 <nav class="sticky-nav">
-  <div style="text-align: center; padding: 1rem; background-color: #ffffff;">
-    <strong style="font-size: 1.4rem; color: #0078b4; display: block; margin-bottom: 0.5rem;">BrightRoots Learning</strong>
-    <a href="#classes">Classes</a>
-    <a href="#schedule">Schedule & Pricing</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#join">Join Us</a>
+  <div style="text-align: center; padding: 1rem; background-color: #ffffff; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <a href="#classes" title="Classes"><img src="icon-classes.png" alt="Classes" style="width: 48px;"></a>
+    <a href="#schedule" title="Schedule & Pricing"><img src="icon-schedule.png" alt="Schedule" style="width: 48px;"></a>
+    <a href="#testimonials" title="Testimonials"><img src="icon-testimonials.png" alt="Testimonials" style="width: 48px;"></a>
+    <a href="#gallery" title="Gallery"><img src="icon-gallery.png" alt="Gallery" style="width: 48px;"></a>
+    <a href="#about" title="About"><img src="icon-about.png" alt="About" style="width: 48px;"></a>
+    <a href="#join" title="Join Us"><img src="icon-join.png" alt="Join Us" style="width: 48px;"></a>
   </div>
 </nav></section>
   
@@ -348,14 +349,8 @@ nav a:hover {
         <img src="kids-real.jpg" alt="Children enjoying BrightRoots classes">
         <div class="caption">Engaged in Art, Math, Dance, and Hindi Activities</div>
       </div>
-      <div class="slide fade">
-        <img src="art.png" alt="Art Class">
-        <div class="caption">Kids enjoying colorful art projects</div>
-      </div>
-      <div class="slide fade">
-        <img src="dance.png" alt="Dance Class">
-        <div class="caption">Grooving with fun and movement</div>
-      </div>
+      
+      
       <div class="slide fade">
         <img src="maths.png" alt="Math Practice">
         <div class="caption">Focused on numbers and patterns</div>
@@ -363,8 +358,8 @@ nav a:hover {
       <!-- Future slides can be added here -->
       <div class="thumbnail-row">
         <div class="thumbnail" onclick="goToSlide(0)"><img src="kids-real.jpg" alt="Thumb 1"></div>
-        <div class="thumbnail" onclick="goToSlide(1)"><img src="art.png" alt="Thumb 2"></div>
-        <div class="thumbnail" onclick="goToSlide(2)"><img src="dance.png" alt="Thumb 3"></div>
+        
+        
         <div class="thumbnail" onclick="goToSlide(3)"><img src="maths.png" alt="Thumb 4"></div>
       </div>
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
