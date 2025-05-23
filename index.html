@@ -1,78 +1,34 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BrightRoots Learning</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-     :root {
-
-      --primary-color: #a084e8;
-
-      --secondary-color: #f7d8ba;
-
-      --accent-color: #b8e0d2;
-
-      --text-color: #333;
-
-      --light-bg: #fff7f1;
-
-      --dark-accent: #7a6bbe;
-
-    }
-
-    * {
-
-      box-sizing: border-box;
-
-    }
     body {
-      font-family: 'Quicksand', sans-serif;
-      margin: 0;
-      padding: 0;
-       background: var(--light-bg);
-
-      color: var(--text-color);
-
-      animation: fadeIn 0.8s ease-in;
-
-    }
-
-    @keyframes fadeIn {
-
-      from { opacity: 0; }
-
-      to { opacity: 1; }
-
-    }
-
-    .fade-up {
-
-      animation: fadeUp 0.8s ease-out;
-
-    }
-
-    @keyframes fadeUp {
-
-      from { opacity: 0; transform: translateY(20px); }
-
-      to { opacity: 1; transform: translateY(0); }
-
-    }
-    }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #1a1a1a;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.6;
+}
     header {
-      background-color: #66c5e5; /* fallback */
-      background-image: url("img_header.jpg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      color: #fff;
-      padding: 3rem 1rem 2rem;
-      text-align: center;
-    }
+  background-color: #66c5e5;
+  background-image: url("img_header.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  padding: 3rem 1rem 2rem;
+  text-align: center;
+}
     nav {
       background: #ffffff;
       padding: 1rem;
@@ -80,12 +36,19 @@
       border-bottom: 2px solid #e1e1e1;
     }
     nav a {
-      margin: 0 1.5rem;
-      text-decoration: none;
-      color: #0078b4;
-      font-weight: 600;
-      font-size: 1rem;
-    }
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #005baa;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #e0f3ff;
+}
     section {
       padding: 2rem;
       max-width: 900px;
@@ -96,51 +59,53 @@
       margin-top: 2rem;
     }
     h1, h2 {
-      color: #0078b4;
-      font-weight: normal;
-    }
+  color: #0078b4;
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  text-shadow: none;
+}
     .class-list li {
       margin-bottom: 1rem;
     }
     footer {
-      background: #eaf5fa;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #444;
-      margin-top: 3rem;
-    }
+  background: #f4f4f4;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 3rem;
+  border-top: 1px solid #ccc;
+}
     .button {
-      background: #0078b4;
-      color: white;
-      padding: 0.8rem 1.4rem;
-      text-decoration: none;
-      border-radius: 3px;
-      display: inline-block;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
+  background: #005baa;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #005f8c;
+  transform: scale(1.05);
+}
     .logo {
       max-width: 160px;
       display: block;
       margin: 0 auto 1.5rem;
     }
     blockquote {
-     background: var(--accent-color);
-
-      padding: 1.5rem 2rem;
-
-      border-left: 6px solid var(--primary-color);
-
-      margin: 2rem 0;
-
+      background: #f2faff;
+      padding: 1rem;
+      border-left: 4px solid #0078b4;
+      margin: 1.5rem 0;
       font-style: italic;
-
-      color: #444;
-
-      border-radius: 8px;
-
-      animation: fadeUp 0.8s ease-out;
     }
     .slideshow-container {
       position: relative;
@@ -158,15 +123,10 @@
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     }
     .caption {
-     font-size: 1rem;
-
+      font-size: 0.9rem;
       text-align: center;
-
-      color: #444;
-
-      margin-top: 0.8rem;
-
-      animation: fadeIn 1.2s ease-in;
+      color: #333;
+      margin-top: 0.5rem;
     }
     .prev, .next {
       cursor: pointer;
@@ -214,22 +174,27 @@
   </style>
 </head>
 <body>
-<header>
-  <div class="overlay">
-    <img src="logobrightroots.jpeg" alt="BrightRoots Learning Logo" class="logo">
-    <h1>BrightRoots Learning</h1>
-    <p>Creative, foundational learning for curious young minds.</p>
+  <header style="text-align: left; padding: 4rem 2rem; background-color: #66c5e5; background-image: url('img_header.jpg'); background-size: cover; background-position: center;">
+  <div style="max-width: 1100px; margin: auto;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: white;">BrightRoots Learning</h1>
+    <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: white;">Creative, foundational learning for curious young minds.</p>
+    <a class="button" href="#join">Join a Free Trial</a>
   </div>
 </header>
 
   <nav>
-    <a href="#classes">Classes</a>
-    <a href="#schedule">Schedule & Pricing</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#join">Join Us</a>
-  </nav>
+  <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto;">
+    <img src="logobrightroots.jpeg" alt="BrightRoots Logo" style="max-height: 60px; margin-left: 1rem;">
+    <div>
+      <a href="#classes">Classes</a>
+      <a href="#schedule">Schedule & Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#join">Join Us</a>
+    </div>
+  </div>
+</nav>
 
   <section id="classes">
     <h2>Our Classes</h2>
@@ -248,32 +213,61 @@
   </section>
 
   <section id="testimonials">
-    <h2>What Parents Say</h2>
-    <blockquote>"BrightRoots gave my child a love for numbers. It's focused and fun!"</blockquote>
-    <blockquote>"The art and dance classes are my daughter's favorite time of the week!"</blockquote>
-  </section>
+  <h2>What Parents Say</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
+    <div style="flex: 1 1 45%; background: #f2faff; padding: 1.5rem; border-left: 6px solid #0078b4; border-radius: 6px; font-style: italic; color: #444; display: flex; gap: 1rem; align-items: center;">
+      <img src="parent1.jpg" alt="Parent 1" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“BrightRoots gave my child a love for numbers. It’s focused and fun!”</p>
+        <strong>- Neha R., Austin TX</strong>
+      </div>
+    </div>
+    <div style="flex: 1 1 45%; background: #f2faff; padding: 1.5rem; border-left: 6px solid #0078b4; border-radius: 6px; font-style: italic; color: #444; display: flex; gap: 1rem; align-items: center;">
+      <img src="parent2.jpg" alt="Parent 2" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“The art and dance classes are my daughter’s favorite time of the week!”</p>
+        <strong>- Priya M., Dallas TX</strong>
+      </div>
+    </div>
+    <div style="flex: 1 1 45%; background: #f2faff; padding: 1.5rem; border-left: 6px solid #0078b4; border-radius: 6px; font-style: italic; color: #444; display: flex; gap: 1rem; align-items: center;">
+      <img src="parent3.jpg" alt="Parent 3" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“Love the structure of the math sessions. It’s exactly what we needed.”</p>
+        <strong>- Amit K., Houston TX</strong>
+      </div>
+    </div>
+    <div style="flex: 1 1 45%; background: #f2faff; padding: 1.5rem; border-left: 6px solid #0078b4; border-radius: 6px; font-style: italic; color: #444; display: flex; gap: 1rem; align-items: center;">
+      <img src="parent4.jpg" alt="Parent 4" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“The teacher is very warm and friendly. My son looks forward to class.”</p>
+        <strong>- Reema S., San Jose CA</strong>
+      </div>
+    </div>
+  </div>
+</section>
 
   <section id="gallery">
     <h2>Gallery</h2>
     <div class="slideshow-container">
       <div class="slide fade">
-        <img src="kids.png" alt="Children enjoying BrightRoots classes">
+        <img src="A_colorful_digital_illustration_depicts_four_young.png" alt="Children enjoying BrightRoots classes">
         <div class="caption">Engaged in Art, Math, Dance, and Hindi Activities</div>
       </div>
       <div class="slide fade">
-        <img src="art.png" alt="Art class placeholder">
+        <img src="art.png" alt="Art Class">
         <div class="caption">Kids enjoying colorful art projects</div>
       </div>
       <div class="slide fade">
-        <img src="dance.png" alt="Dance class placeholder">
+        <img src="dance.png" alt="Dance Class">
         <div class="caption">Grooving with fun and movement</div>
       </div>
       <div class="slide fade">
-        <img src="maths.png" alt="Math class placeholder">
+        <img src="maths.png" alt="Math Practice">
         <div class="caption">Focused on numbers and patterns</div>
       </div>
+      <!-- Future slides can be added here -->
       <div class="thumbnail-row">
-        <div class="thumbnail" onclick="goToSlide(0)"><img src="kids.png" alt="Thumb 1"></div>
+        <div class="thumbnail" onclick="goToSlide(0)"><img src="A_colorful_digital_illustration_depicts_four_young.png" alt="Thumb 1"></div>
         <div class="thumbnail" onclick="goToSlide(1)"><img src="art.png" alt="Thumb 2"></div>
         <div class="thumbnail" onclick="goToSlide(2)"><img src="dance.png" alt="Thumb 3"></div>
         <div class="thumbnail" onclick="goToSlide(3)"><img src="maths.png" alt="Thumb 4"></div>
@@ -380,6 +374,10 @@
     <h2>Join a Free Trial Class</h2>
     <p>Email us at <a href="mailto:momentsnmelts@gmail.com">momentsnmelts@gmail.com</a> or reach out on <a href="https://www.facebook.com/BrightRootsLearning">Facebook</a>.</p>
     <a class="button" href="https://wa.me/916386537989">Message us on WhatsApp</a>
+  </section>
+
+  <section class="logo-footer">
+    <img src="logobrightroots.jpeg" alt="BrightRoots Learning Logo" class="logo">
   </section>
 
   <footer>
